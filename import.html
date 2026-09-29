@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI LAW CBT</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+    <h1>Add a Question</h1>
+    <p class="subtitle">Fill in each field below, then save it to the question bank.</p>
+
+    <div class="form-group">
+      <label for="subject">Subject</label>
+      <select id="subject">
+        <option value="LAW 101">LAW 101 - English for Legal Writing</option>
+        <option value="PUL 101">PUL 101 - Introduction to Law</option>
+        <option value="CLL 103">CLL 103 - Latin for Lawyers</option>
+        <option value="GES 101">GES 101</option>
+        <option value="GST 111">GST 111 - Communication</option>
+        <option value="GST 112">GST 112 - Nigerian Peoples & Culture</option>
+        <option value="PHIL 101">PHIL 101</option>
+        <option value="PHIL 102">PHIL 102</option>
+        <option value="POS 113">POS 113</option>
+        <option value="PSY 101">PSY 101</option>
+        <option value="ANT 115">ANT 115</option>
+        <option value="SOC 102">SOC 102</option>
+        <option value="ENG 116">ENG 116 - Poetry</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="questionText">Question</label>
+      <textarea id="questionText" rows="3" placeholder="Type the question here..."></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="optionA">Option A</label>
+      <input type="text" id="optionA" placeholder="First option">
+    </div>
+    <div class="form-group">
+      <label for="optionB">Option B</label>
+      <input type="text" id="optionB" placeholder="Second option">
+    </div>
+    <div class="form-group">
+      <label for="optionC">Option C</label>
+      <input type="text" id="optionC" placeholder="Third option">
+    </div>
+    <div class="form-group">
+      <label for="optionD">Option D</label>
+      <input type="text" id="optionD" placeholder="Fourth option">
+    </div>
+
+    <div class="form-group">
+      <label for="correctAnswer">Correct Answer</label>
+      <select id="correctAnswer">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="explanation">Explanation (optional)</label>
+      <textarea id="explanation" rows="2" placeholder="Why is this the correct answer?"></textarea>
+    </div>
+
+    <button id="saveBtn" class="btn-primary">Save Question</button>
+
+    <div id="statusMessage" class="status-message hidden"></div>
+  </div>
+
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="import.js"></script>
+</body>
+</html>
