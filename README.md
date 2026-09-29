@@ -1,4 +1,4 @@
-# UI LLB CBT
+# UI LAW STUDY 
 
 A computer-based test practice app for the UI LLB'31 class, built with HTML, CSS, JavaScript, and Firebase Firestore.
 
@@ -9,7 +9,7 @@ A computer-based test practice app for the UI LLB'31 class, built with HTML, CSS
 
 Solution link: [https://github.com/DevAdeh/UI-LLB-CBT.git]
 
-Live link: [https://your-live-link-here.vercel.app/]
+Live link: [https://ui-law.vercel.app/]
 
 ## Features
 - Add questions to a shared question bank, organized by subject
@@ -35,7 +35,7 @@ Questions are stored in Firebase Firestore, organized by subject. When starting 
 
 ## Project structure
 
-ui-llb-cbt/
+ui-law-study/
 ├── index.html
 ├── import.html
 ├── take-test.html
